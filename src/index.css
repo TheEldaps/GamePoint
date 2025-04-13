@@ -4,10 +4,16 @@
 
 
 @font-face {
-    font-family: "Swiss 721 Black";
-    src: url("./assets/fonts/SWISS721BLACKBT.TTF") format("truetype");
+    font-family: 'Swis721BlkBT';
+    src: url('./assets/Fonts/SWZ721KI.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* 👇 Marquee Animation */

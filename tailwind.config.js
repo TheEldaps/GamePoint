@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'swiss': ["Swiss721 Blk BT"], // Define custom font
+        swis: ['Arial', 'sans-serif'], // Define custom font
       }
     }
   },
