@@ -22,7 +22,7 @@ export default function HeroSection() {
 
         <PlayTournamentBtn
           color="bg-[#5C9703]"
-          styles="block min-w-[50px] text-[32px] font-bold mt-[30px] font-[Swiss721 Blk BT] py-[20px] px-[50px] text-[#000]"
+          styles="block min-w-[50px] text-[32px] font-bold py-[10px] px-[20px] font-[Swiss721 Blk BT]   text-[#000]"
         />
       </div>
 

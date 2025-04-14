@@ -5,6 +5,7 @@ import TournamentStack from "../Components/TournamentStack";
 import HeroTwo from "../Components/HeroTwo";
 import GameStack from "../Components/GameStack";
 import About from "../Components/About";
+import Footer from "../Components/Footer";
 
 export default function LandingPage() {
   return (
@@ -16,7 +17,7 @@ export default function LandingPage() {
       <HeroTwo />
       <GameStack />
       <About />
-      <h1 className="text-[white]">hey there</h1>
+      <Footer />
     </div>
   );
 }

@@ -45,8 +45,8 @@ export default function TournamentCard() {
           <span>N10,000</span>
         </section>
 
-        <section className="text-[24px] font-[bold] font-[Swiss721 Blk BT] mt-[20px]">
-          <button className="bg-[#8bc72f] flex justify-center items-center hover:bg-[#8ac72f82] text-[#000] text-[1.2rem] font-[Arial] w-[100%] mb-[10px] ">
+        <section className=" min-h-[160px] text-[24px] font-[bold] font-[Swiss721 Blk BT] mt-[20px]">
+          <button className="bg-[#8bc72f] cursor-pointer flex justify-center items-center hover:bg-[#8ac72f82] text-[#000] text-[1.2rem] font-[Arial] w-[100%] mb-[10px] ">
             <img
               className="inline w-[40px] mr-[10px] py-[15px]"
               src={ButtonPad}
@@ -55,7 +55,7 @@ export default function TournamentCard() {
             Join tournament
           </button>
 
-          <button className="bg-[#1c1c1c] h-[60px] hover:bg-[#8bc72f] hover:text-[#000] text-[#fff] text-[1.1rem] border-[2px] border-[#4A4A4A] block w-[100%]">
+          <button className="bg-[#1c1c1c] cursor-pointer h-[60px] hover:bg-[#3a3b38] hover:text-[#000] text-[#fff] text-[1.1rem] border-[2px] border-[#4A4A4A] block w-[100%]">
             View details
           </button>
         </section>
