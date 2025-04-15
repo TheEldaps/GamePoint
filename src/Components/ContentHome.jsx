@@ -2,7 +2,7 @@ import TournamentCard from "./TournamentCard";
 
 export default function ContentHome() {
   return (
-    <div className=" bg-[#0F0F0F]  ml-[30px] mt-[80px]">
+    <div className=" bg-[#0F0F0F] border-[2px] ml-[240px] w-[100%] mt-[80px]">
       <div className="flex justify-evenly mb-[40px]">
         <section className="w-[500px] bg-[gray] h-[300px] border-[#000] border-2">
           Empty Section One

@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        swis: ['Arial', 'sans-serif'], // Define custom font
+        swis: ['SWZ721KI', 'system-ui', 'Arial', 'sans-serif'], // Define custom font
       }
     }
   },

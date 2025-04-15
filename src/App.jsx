@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/dashboard" element={<DashboardHome />} />
         <Route path="/wallet" element={<DashboardWallet />} />
         <Route path="/settings" element={<DashboardSettings />} />
-        <Route path="/tournament" element={<DashboardTournaments />} />
+        <Route path="/tournaments" element={<DashboardTournaments />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
