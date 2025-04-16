@@ -9,7 +9,7 @@ import Footer from "../Components/Footer";
 
 export default function LandingPage() {
   return (
-    <div className="relative pb-[50px] w-full min-h-[200vh] bg-[#0F0F0F]">
+    <div className=" pb-[50px] w-full min-h-[200vh] bg-[#0F0F0F]">
       <Nav />
       <HeroSection />
       <GameFrame />

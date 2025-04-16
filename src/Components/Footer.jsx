@@ -11,29 +11,23 @@ export default function Footer() {
         </p>
       </div>
       <div>
-        <ul className="flex flex-col list-none gap-y-[10px] text-[1.1rem]">
-          <li>
-            <Link to="/home" className="no-underline">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/tournaments" className="no-underline">
-              Tournaments
-            </Link>
-          </li>
-          <li>
-            <Link to="/terms&condition" className="no-underline">
-              Terms & Conditions
-            </Link>
-          </li>
-          <li>
-            <Link to="/privacy-policy" className="no-underline">
-              Privacy Policy
-            </Link>
-          </li>
+        <ul className="flex flex-col list-none gap-y-[10px] text-[1.1rem] text-[#fff]">
+          <Links to="/" title="Home" />
+          <Links to="/tournaments" title="Tournaments" />
+          <Links to="/terms&condition" title="Terms and condition" />
+          <Links to="/privacy&policy" title="Privacy and Policy" />
         </ul>
       </div>
     </section>
+  );
+}
+
+function Links({ to, title }) {
+  return (
+    <li className=" my-[5px]">
+      <Link to={to} className="text-[#fff] hover:text-[#ffffff86] no-underline">
+        {title}
+      </Link>
+    </li>
   );
 }

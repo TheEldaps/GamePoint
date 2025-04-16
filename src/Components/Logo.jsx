@@ -6,7 +6,7 @@ export default function Logo() {
     <>
       <Link
         to="/"
-        className="flex text-[#fff] justify-center items-center no-underline min-w-[200px]"
+        className="flex  text-[#fff] justify-center items-center no-underline min-w-[200px]"
       >
         <img
           className="inline w-[50px] h-[50px] mr-[10px]"

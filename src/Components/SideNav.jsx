@@ -4,16 +4,23 @@ import Logout from "../assets/Images/logout_Icon.png";
 import Settings from "../assets/Images/Settings_Icon.png";
 import Tournament from "../assets/Images/Tournament_Icon.png";
 import Wallet from "../assets/Images/Wallet_Icon.png";
+import { useState } from "react";
 
 export default function SideNav() {
+  const [active, setActive] = useState("home");
+
   return (
-    <ul className=" bg-[#121212] list-none pt-[20px] px-[20px]  w-[200px] flex flex-col h-[100%] fixed top-[60px] ">
-      <div className="flex  h-[47vh] flex-col gap-[10px] ">
+    <nav className="h-[90%] bg-[#121212] list-none pt-[20px] px-[20px]  w-[200px] flex flex-col  fixed top-[60px] ">
+      <div className="flex  h-[47vh]  flex-col gap-[10px] ">
         <SideNavLink
           src={Home}
           icon="home-icon"
           title="Home"
           path="/dashboard"
+          onClick={() => {
+            setActive("home");
+          }}
+          active={active}
         />
 
         <SideNavLink
@@ -36,7 +43,7 @@ export default function SideNav() {
           path="/settings"
         />
       </div>
-      <div className="flex flex-col-reverse  border-[white] h-[35vh]  ">
+      <div className="flex flex-col-reverse grow pb-[20px] ">
         <SideNavLink
           src={Logout}
           bg="bg-[#1E2415]"
@@ -45,6 +52,6 @@ export default function SideNav() {
           textcol="text-[#8BC72F]"
         />
       </div>
-    </ul>
+    </nav>
   );
 }

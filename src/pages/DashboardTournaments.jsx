@@ -4,7 +4,7 @@ import ContentTournament from "../Components/ContentTournament";
 
 export default function DashboardTournaments() {
   return (
-    <div className="bg-[#0F0F0F]  text-[#ffffff]">
+    <div className="bg-[#0F0F0F] flex text-[#ffffff]">
       <SearchTab />
       <div className="flex">
         <SideNav className="border-[20px] border-[#ffffff] border-solid" />

@@ -2,7 +2,7 @@ import TournamentCard from "./TournamentCard";
 
 export default function ContentTournament() {
   return (
-    <div className="ml-[240px] w-[100%] px-[4rem] pt-[120px] ">
+    <div className="flex ml-[240px] w-[100%] px-[4rem] pt-[120px] ">
       <div>
         <h2 className=" font-[bold] pl-[40px] my-[0px] text-[2.5rem]">
           My Tournament

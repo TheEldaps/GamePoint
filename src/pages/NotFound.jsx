@@ -5,7 +5,7 @@ export default function NotFound() {
         Oops! Page does not exist
       </h1>
       <p className="text-center text-[32px]">
-        This is likely as a result of a mistake in URL you typed
+        This is likely a result of a mistake in the URL you typed
       </p>
     </div>
   );
