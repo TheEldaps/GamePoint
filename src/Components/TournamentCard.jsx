@@ -8,7 +8,7 @@ import FreeToPlay from "../assets/images/FreeToPlay.png";
 
 export default function TournamentCard() {
   return (
-    <section className="w-[300px]">
+    <section className="w-[300px] ">
       <img className="w-[300px]" src={Tournament} alt="" />
 
       <div className="bg-[#1c1c1c] pt-[10px] px-[15px] ">

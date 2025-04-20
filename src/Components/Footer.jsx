@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <section className="flex w-[800px] justify-between text-[#fff] pt-[30px] px-[40px]">
+    <section className="flex max-w-[800px]  justify-between text-[#fff] pt-[30px] px-[40px]">
       <div className=" flex flex-col items-center ">
         <Logo />
         <p className="mt-[0px] text-[0.8rem] mx-[auto]">

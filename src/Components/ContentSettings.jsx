@@ -1,7 +1,11 @@
+import Gears from "../assets/Images/Gears.gif";
+import GearsA from "../assets/Images/GearsA.png";
+
 export default function ContentSettings() {
   return (
-    <div className="ml-[140px] bg-[#0F0F0F] mt-[80px] px-[4rem] pt-[120px] border-4 border-[#c60d0d]">
-      I am Content Settings, i return nothing
-    </div>
+    <div
+      className="w-[100%]  ml-[240px] bg-contain bg-no-repeat mt-[80px] px-[4rem] pt-[120px]"
+      // style={{ backgroundImage: `url(${GearsA})` }}
+    ></div>
   );
 }

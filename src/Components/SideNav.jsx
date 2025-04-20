@@ -10,7 +10,7 @@ export default function SideNav() {
   const [active, setActive] = useState("home");
 
   return (
-    <nav className="h-[90%] bg-[#121212] list-none pt-[20px] px-[20px]  w-[200px] flex flex-col  fixed top-[60px] ">
+    <nav className="h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed w-[200px] flex flex-col top-[70px] flex-grow ">
       <div className="flex  h-[47vh]  flex-col gap-[10px] ">
         <SideNavLink
           src={Home}
@@ -43,7 +43,7 @@ export default function SideNav() {
           path="/settings"
         />
       </div>
-      <div className="flex flex-col-reverse grow pb-[20px] ">
+      <div className="flex flex-col-reverse grow pb-[25px] ">
         <SideNavLink
           src={Logout}
           bg="bg-[#1E2415]"

@@ -15,7 +15,7 @@ export default function Nav() {
 
         <ul className="list-none flex justify-between min-w-[800px] text-[1.5rem]">
           <li>
-            <Link to="/" className={`${LinkStyles}`}>
+            <Link to="/dashboard" className={`${LinkStyles}`}>
               Home
             </Link>
           </li>
@@ -30,8 +30,8 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/createaccount" className={`${LinkStyles}`}>
-              Create an account
+            <Link to="/Signup" className={`${LinkStyles}`}>
+              Sign up
             </Link>
           </li>
           <li>

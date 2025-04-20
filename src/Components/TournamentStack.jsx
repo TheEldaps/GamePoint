@@ -7,9 +7,7 @@ export default function TournamentStack() {
         Find a tournament
       </h1>
 
-      <section className=" grid grid-cols-3 md:grid-cols-2 gap-y-[150px] gap-x-[30px] place-items-center px-[90px] py-[40px]">
-        <TournamentCard />
-        <TournamentCard />
+      <section className=" flex flex-wrap justify-center gap-y-[150px] overflow-hidden h-[1400px] border-[2px] gap-x-[80px]  px-[150px] py-[40px]">
         <TournamentCard />
         <TournamentCard />
         <TournamentCard />

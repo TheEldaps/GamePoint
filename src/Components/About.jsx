@@ -1,11 +1,10 @@
 import Messi from "../assets/Images/Messi.png";
 import CartoonGirl from "../assets/Images/CartoonGirl.png";
 import PlayTournamentBtn from "./PlayTournamentBtn";
-import BackDesign from "../assets/Images/AboutBackgroundDesign.png";
 
 export default function About() {
   return (
-    <div className=" w-[1280] h-[530px] px-[40px] mt-[300px] bg-[#8BC72F] bg-[url('./assets/Images/AboutBackgroundDesign.png')] bg-[cover] min-h-[300px]  gap-[60px]  overflow-visible">
+    <div className="flex w-[1280] h-[530px] px-[40px] mt-[300px] bg-[#8BC72F] bg-[url('./assets/Images/AboutBackgroundDesign.png')] bg-[cover] min-h-[300px]  gap-[60px]  overflow-visible">
       {/* <img src={BackDesign} alt="" className="w-[892px] h-[530px] relative" /> */}
       <div className="flex absolute">
         <section className="">
@@ -13,7 +12,7 @@ export default function About() {
             About <span className="text-[#E5FC0A] ">A10</span> <br /> e-sports{" "}
             <br /> Platform
           </h2>
-          <p className="text-[1.3rem] leading-[24px] text-[#4a4a4a]">
+          <p className="text-[1.3rem] w-[100%] leading-[24px] text-[#4a4a4a]">
             Play against or alongside other iconic gamers and show the <br />
             wonder of your skills in legendary tournaments
           </p>

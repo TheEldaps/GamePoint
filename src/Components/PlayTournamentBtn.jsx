@@ -9,7 +9,7 @@ export default function PlayTournamentBtn({
   return (
     <Link to="/tournament" className="no-underline">
       <button
-        className={`${styles} ${pad} flex items-center ${color}  hover:bg-[#97e22663]`}
+        className={`${styles} ${pad} flex items-center ${color} cursor-pointer hover:bg-[#46562da8]`}
       >
         <img
           className="w-[40px] mr-[10px] inline text-[#000]"
