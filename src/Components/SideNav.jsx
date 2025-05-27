@@ -7,7 +7,7 @@ import Wallet from "../assets/Images/Wallet_Icon.png";
 import { useState } from "react";
 
 export default function SideNav() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("");
 
   return (
     <nav className="h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed w-[200px] flex flex-col top-[70px] flex-grow ">
@@ -20,6 +20,7 @@ export default function SideNav() {
           onClick={() => {
             setActive("home");
           }}
+          id="home"
           active={active}
         />
 
@@ -28,6 +29,11 @@ export default function SideNav() {
           icon="Tournament-icon"
           title="Tournaments"
           path="/tournaments"
+          onClick={() => {
+            setActive("tournament");
+          }}
+          id="tournament"
+          active={active}
         />
 
         <SideNavLink
@@ -35,14 +41,25 @@ export default function SideNav() {
           icon="Wallet-icon"
           title="Wallet"
           path="/wallet"
+          onClick={() => {
+            setActive("wallet");
+          }}
+          id="wallet"
+          active={active}
         />
         <SideNavLink
           src={Settings}
           icon="Settings-icon"
           title="Settings"
           path="/settings"
+          onClick={() => {
+            setActive("settings");
+          }}
+          id="settings"
+          active={active}
         />
       </div>
+
       <div className="flex flex-col-reverse grow pb-[25px] ">
         <SideNavLink
           src={Logout}

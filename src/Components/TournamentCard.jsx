@@ -4,7 +4,7 @@ import ButtonPad from "../assets/Images/ButtonPadIcon.png";
 import CommunityIcon from "../assets/Images/CommunityIcon.png";
 import fourVfour from "../assets/Images/4V4.png";
 import TrophyIcon from "../assets/Images/TrophyIcon.png";
-import FreeToPlay from "../assets/images/FreeToPlay.png";
+import FreeToPlay from "../assets/images/freetoplay.png";
 
 export default function TournamentCard() {
   return (
