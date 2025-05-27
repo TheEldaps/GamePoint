@@ -4,7 +4,7 @@ import ButtonPad from "../assets/Images/ButtonPadIcon.png";
 import CommunityIcon from "../assets/Images/CommunityIcon.png";
 import fourVfour from "../assets/Images/4V4.png";
 import TrophyIcon from "../assets/Images/TrophyIcon.png";
-import FreeToPlay from "../assets/Images/FreeToPlay.png";
+// import FreeToPlay from "../assets/Images/FreeToPlay.png";
 
 export default function TournamentCard() {
   return (
@@ -21,11 +21,7 @@ export default function TournamentCard() {
           </li>
 
           <li className="flex items-center">
-            <img
-              className="w-[30px]"
-              src={FreeToPlay}
-              alt="free to play icon"
-            />
+            <img className="w-[30px]" src={""} alt="free to play icon" />
             <span className="">Free-to-play</span>
           </li>
 
