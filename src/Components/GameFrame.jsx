@@ -7,8 +7,8 @@ const imageList = [Call2Duty, PES2020, Overwatch, PUBG];
 
 const GameFrame = () => {
   return (
-    <div className="bg-[#121212] relative overflow-hidden w-full   bg-gradient-to-r from-[rgba(206,206,206,0.1125)] via-[rgba(206,206,206,0.1215)] to-[rgba(206,206,206,0.1215)]  border-t-2 border-b-2 border-[#5C9703]">
-      <div className="flex animate-marquee whitespace-nowrap  gap-[10rem]">
+    <div className="mt-[20px] bg-[#121212] relative overflow-hidden w-full   bg-gradient-to-r from-[rgba(206,206,206,0.1125)] via-[rgba(206,206,206,0.1215)] to-[rgba(206,206,206,0.1215)]  border-t-2 border-b-2 border-[#5C9703]">
+      <div className="flex animate-marquee whitespace-nowrap  gap-[4rem] md:gap-[10rem]">
         {[...imageList, ...imageList].map((src, index) => (
           <img
             key={index}

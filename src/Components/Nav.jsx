@@ -1,45 +1,67 @@
 // import Menu from "./Menu";
+import { useState } from "react";
 import Logo from "./Logo";
 
 import { Link } from "react-router-dom";
 
 export default function Nav() {
-  // state variable tor togglig the menu bar
+  const [toggleNav, setToggleNav] = useState(false);
 
-  let LinkStyles =
-    "no-underline block px-[2rem] py-[10px] text-[1.6rem] text-[#ffffff] hover:bg-[#5C9703] transition duration-300 ease-in-out";
+  const LinkStyles =
+    "no-underline block px-5 py-2 sm:text-base lg:text-lg lg:px-8 xl:text-2xl text-white hover:bg-[#5C9703] transition duration-300 ease-in-out";
+
+  const NavList = (
+    <ul className="list-none flex flex-col md:flex-row justify-between  text-lg">
+      <li>
+        <Link to="/dashboard" className={LinkStyles}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/tournaments" className={LinkStyles}>
+          Tournament
+        </Link>
+      </li>
+      <li>
+        <Link to="/dashboard" className={LinkStyles}>
+          Dashboard
+        </Link>
+      </li>
+      <li>
+        <Link to="/Signup" className={LinkStyles}>
+          Sign up
+        </Link>
+      </li>
+      <li>
+        <Link to="/login" className={LinkStyles}>
+          Log in
+        </Link>
+      </li>
+    </ul>
+  );
+
+  function handleClick() {
+    setToggleNav((prev) => !prev);
+  }
+
   return (
-    <header className="  text-[#ffffff] bg-black border-gray-800 border-b-[2px]">
-      <nav className="flex justify-between items-center  px-[50px] text-[20px] min-h-[40px]">
-        <Logo className="w-[500px]" />
+    <header className="bg-black border-b-2 border-gray-800">
+      <nav className="flex justify-between relative items-center px-7 md:px-15 text-lg min-h-[40px]">
+        <Logo width='100px' text='2rem' imgWidth='40px' imgHeight='40px' />
 
-        <ul className="list-none flex justify-between min-w-[800px] text-[1.5rem]">
-          <li>
-            <Link to="/dashboard" className={`${LinkStyles}`}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/tournaments" className={`${LinkStyles}`}>
-              Tournament
-            </Link>
-          </li>
-          <li>
-            <Link to="/dashboard" className={`${LinkStyles}`}>
-              Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link to="/Signup" className={`${LinkStyles}`}>
-              Sign up
-            </Link>
-          </li>
-          <li>
-            <Link to="/login" className={`${LinkStyles}`}>
-              Log in
-            </Link>
-          </li>
-        </ul>
+        <button className="md:hidden text-white text-xl" onClick={handleClick}>
+          {toggleNav ? "Close" : "Menu"}
+        </button>
+
+        {/* Mobile nav */}
+        {toggleNav && (
+          <div className="absolute top-[100%] left-0 w-full bg-black sm:hidden z-10">
+            {NavList}
+          </div>
+        )}
+
+        {/* Desktop nav */}
+        <div className="hidden md:flex ">{NavList}</div>
       </nav>
     </header>
   );
