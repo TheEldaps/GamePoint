@@ -11,7 +11,7 @@ export default function TournamentCard() {
     <section className=" border-[1px] w-[300px] border-[white] md:w-[300px] mt-[60px] mb-[60px]">
       <img className="w-[300px]" src={Tournament} alt="" />
 
-      <div className="bg-[#1c1c1c]  py-[10px] px-[10px] md:px-[15px] ">
+      <div className="bg-[#1c1c1c]  py-[10px] px-[10px] md:py-[15px] md:px-[15px] ">
         <h3 className="text-[#fff]  md:text-[24px] ">Call of duty</h3>
 
         <ul className=" grid grid-cols-2 px-[0px] md:gap-x-[10px] gap-y-[10px] md:gap-y-[15px] text-[0.6rem] md:text-[1.1rem] list-none pb-[10px] mt-[5px] mb-[5px] font-['Georgia'] text-[#7E7F7F]">
@@ -53,8 +53,8 @@ export default function TournamentCard() {
           <span>N10,000</span>
         </section>
 
-        <section className="w-[100%] md:min-h-[160px] text-[24px] font-[bold] mt-[20px]">
-          <button className="bg-[#8bc72f] cursor-pointer flex justify-center items-center hover:bg-[#8ac72f82] text-[#000] text-[0.8rem] md:text-[1.2rem] font-[Arial] w-[100%] mb-[10px] ">
+        <section className="w-[100%] text-[24px] font-[bold] mt-[20px]">
+          <button className="bg-[#8bc72f] cursor-pointer flex justify-center items-center hover:bg-[#8ac72f82] text-[#000] text-[0.8rem] md:text-[1.2rem] font-[Arial] w-[100%] mb-[10px] md:py-[8px] ">
             <img
               className="inline w-[15px] md:w-[15px] mr-[4px] md:mr-[10px] py-[10px] md:py-[15px]"
               src={ButtonPad}
@@ -63,7 +63,7 @@ export default function TournamentCard() {
             Join tournament
           </button>
 
-          <button className="bg-[#1c1c1c] cursor-pointer md:h-[60px] hover:bg-[#3a3b38] hover:text-[#000] text-[#fff] text-[0.8rem] py-[8px]  md:text-[1.1rem] border-[2px] border-[#4A4A4A] block  w-[100%]">
+          <button className="bg-[#1c1c1c] cursor-pointer md:h-[60px] hover:bg-[#3a3b38] hover:text-[#000] text-[#fff] text-[0.8rem] py-[8px] md:py-[8px]  md:text-[1.2rem] border-[2px] border-[#4A4A4A] font-[Arial] block  w-[100%]">
             View details
           </button>
         </section>

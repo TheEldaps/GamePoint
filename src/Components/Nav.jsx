@@ -11,7 +11,7 @@ export default function Nav() {
     "no-underline block px-5 py-2 sm:text-base lg:text-lg lg:px-8 xl:text-2xl text-white hover:bg-[#5C9703] transition duration-300 ease-in-out";
 
   const NavList = (
-    <ul className="list-none flex flex-col md:flex-row justify-between  text-lg">
+    <ul className="list-none border-t border-white flex flex-col md:flex-row justify-between  text-base ">
       <li>
         <Link to="/dashboard" className={LinkStyles}>
           Home
@@ -47,7 +47,7 @@ export default function Nav() {
   return (
     <header className="bg-black border-b-2 border-gray-800">
       <nav className="flex justify-between relative items-center px-7 md:px-15 text-lg min-h-[40px]">
-        <Logo width='100px' text='2rem' imgWidth='40px' imgHeight='40px' />
+        <Logo width="100px" text="2rem" imgWidth="40px" imgHeight="40px" />
 
         <button className="md:hidden text-white text-xl" onClick={handleClick}>
           {toggleNav ? "Close" : "Menu"}

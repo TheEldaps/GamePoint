@@ -5,13 +5,13 @@ export default function Footer() {
   return (
     <section className="flex max-w-[800px]  justify-between text-[#fff] pt-[30px] px-[40px]">
       <div className=" flex flex-col items-center ">
-        <Logo />
-        <p className="mt-[0px] text-[0.8rem] mx-[auto]">
+        <Logo width="150px" text="2.3rem" imgWidth="21px" imgHeight="30px" />
+        <p className="mt-[0px] text-[0.5rem] mx-[auto]">
           Connecting the world of E-sports
         </p>
       </div>
       <div>
-        <ul className="flex flex-col list-none gap-y-[10px] text-[1.1rem] text-[#fff]">
+        <ul className="flex flex-col list-none md:gap-y-[10px] md:text-[1.1rem] text-[#fff]">
           <Links to="/" title="Home" />
           <Links to="/tournaments" title="Tournaments" />
           <Links to="/terms&condition" title="Terms and condition" />

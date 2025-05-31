@@ -10,7 +10,7 @@ export default function SideNav() {
   const [active, setActive] = useState("");
 
   return (
-    <nav className="h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed w-[200px] flex flex-col top-[70px] flex-grow ">
+    <nav className="h-[95vh] md:h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ">
       <div className="flex  h-[47vh]  flex-col gap-[10px] ">
         <SideNavLink
           src={Home}

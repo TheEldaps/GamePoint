@@ -2,8 +2,8 @@ import PlayTournamentBtn from "./PlayTournamentBtn";
 
 export default function HeroTwo() {
   return (
-    <section className="py-[30px] md:py-[80px]">
-      <div className="text-[white] text-[3rem] md:text-6xl text-bold text-center">
+    <section className="py-[30px] px-[5px] md:py-[80px]">
+      <div className="text-[white] text-[3rem] md:text-6xl text-bold text-center ">
         <h2 className="leading-13 ">
           We are the best <br />
           e-sport tournament <br />

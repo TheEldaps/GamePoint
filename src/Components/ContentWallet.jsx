@@ -3,7 +3,7 @@ import ButtonPad from "../assets/Images/ButtonPadIcon.png";
 
 export default function ContentWallet() {
   return (
-    <section className=" w-[100%] min-h-[80vh] ml-[240px] bg-[#0F0F0F] mt-[80px] px-[] pt-[40px]">
+    <section className=" w-[100%] min-h-[80vh] md:ml-[240px] bg-[#0F0F0F] mt-[80px] px-[] pt-[40px]">
       <section className="min-h-[100px] mx-[auto] w-[80%] p-[20px] px-[40px]  border-[1px] border-[#8BC72F]">
         <div className="flex flex-wrap w-[100%] border-t-[4px] pt-[30px] border-[#8BC72F]">
           <div className=" font-[arial] min-w-[400px] flex-grow">

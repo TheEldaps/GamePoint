@@ -7,7 +7,10 @@ export default function DashboardHome() {
     <div className="bg-[#0F0F0F]  text-[#ffffff]">
       <SearchTab />
       <div className="flex">
-        <SideNav />
+        <div className="hidden md:flex">
+          <SideNav />
+        </div>
+
         <ContentHome />
       </div>
     </div>
