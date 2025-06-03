@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function PlayTournamentBtn({
   styles,
-  pad = "py-[20px] px-[50px]",
+  pad = "md:py-[20px] md:px-[50px]",
   color = "bg-[#5C9703]",
 }) {
   return (
-    <Link to="/tournaments" className="no-underline mt-[]">
+    <Link to="/tournaments" className=" flex justify-start">
       <button
         className={`${styles} ${pad} flex items-center ${color} cursor-pointer hover:bg-[#46562da8]`}
       >

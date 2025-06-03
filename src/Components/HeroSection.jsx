@@ -5,17 +5,25 @@ import HeroImagePhone from "../assets/Images/Heroimage-phone-02.png";
 
 export default function HeroSection() {
   return (
-    <>
-      <div className=" relative flex text-[#ffffff] pt-[10px] pl-[20px] md:pl-[90px] bg-[#000]">
-        <div className="w-[55%]">
-          <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[96px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left ">
-            Dominate the world <br /> with <br /> every win.
+    <section className="bg-[#000]">
+      <div className="relative flex text-[#ffffff] pt-[10px] pl-[16px] md:pl-[40px] bg-[#000]">
+        <div className="w-[63%]">
+          <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[80px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left   sm:text-amber-300 md:text-blue-600 lg:text-emerald-700 lg:text-[6.5rem]">
+            Dominate <br />
+            the world <br /> with <br /> every <br /> win.
           </h1>
 
-          <p className=" border- block min-w-[80px] max-w-[230px] text-[0.9rem] mt-[20px] mb-[10px]">
-            Play against or alongside <br /> other iconic gamers and show the
-            wonder of your skills in legendary tournament.
+          <p className=" block w-[80%]  max-w-[100%] text-[0.9rem] mt-[20px] mb-[10px] md:text-[1.125rem] md:w-[72%] xl:w-[65%]">
+            Play against or alongside other iconic gamers and show the wonder{" "}
+            <br className="hidden md:inline lg:hidden" /> of your skills in
+            legendary tournament.
           </p>
+
+          <PlayTournamentBtn
+            color="bg-[#5C9703]"
+            styles="sm:block min-w-[50px] text-[0.7rem] font-bold md:py-[20px] md:px-[50px] md:text-[1rem] py-[10px] px-[20px] font-[Swiss721 Blk BT] my-[10px] text-[#000] "
+            pad="py-[10px] px-[30px]"
+          />
         </div>
 
         <div className="w-[45%] ">
@@ -25,7 +33,7 @@ export default function HeroSection() {
             alt=""
           />
           <img
-            className="hidden w-[230px] h-[330px]  absolute bottom-[-20px] right-[0px] md:w-[750px] md:h-[770px]"
+            className="hidden lg:block w-[600px]  h-[650px]  absolute top-[150px] right-[0px] xl:w-[900px] xl:h-[850px] xl:top-[0px] "
             src={Halland}
             alt=""
           />
@@ -33,15 +41,10 @@ export default function HeroSection() {
           <img
             src={HeroImagePhone}
             alt=""
-            className='w-[280px] h-[410px] md:hidden absolute top-[100px] right-[0px] md:w-[750px] md:h-[770px]"'
+            className="w-[290px] h-[430px] lg:hidden sm:h-120 sm:top-10 sm:w-[360px] absolute top-[120px] right-[0px] md:w-[520px] md:h-[670px] md:top-[130px] md:right-0"
           />
         </div>
       </div>
-      <PlayTournamentBtn
-        color="bg-[#5C9703]"
-        styles="sm:block min-w-[50px] text-[0.7rem] font-bold py-[10px] px-[20px] font-[Swiss721 Blk BT] mx-[auto] my-[20px] text-[#000] "
-        pad="py-[10px] px-[30px]"
-      />
-    </>
+    </section>
   );
 }
