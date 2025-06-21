@@ -5,7 +5,13 @@ export default function ContentHome() {
     <section className="flex flex-col bg-[#0F0F0F]  pt-[40px] px-[20px] w-[100%] md:ml-[270px] mt-[80px]">
       <div className="flex justify-center md:justify-evenly mb-[40px]  ">
         <section className="flex-grow max-w-[500px] bg-[gray] h-[300px] border-[#000] border-2">
-          Empty Section One
+          <iframe
+            src="https://html5.gamemonetize.co/ahsrpqpzx05abp7qbkazmyvrw02wcwwm/"
+            width="800"
+            height="600"
+            scrolling="none"
+            frameborder="0"
+          ></iframe>
         </section>
         <section className="hidden md:flex flex-grow max-w-[500px] bg-[gray] h-[300px] border-[#000] border-2">
           Empty Section Two

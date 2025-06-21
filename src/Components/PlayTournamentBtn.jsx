@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function PlayTournamentBtn({
   styles,
-  pad = "md:py-[20px] md:px-[50px]",
+  pad = "py-[20px] px-[50px]",
   color = "bg-[#5C9703]",
 }) {
   return (

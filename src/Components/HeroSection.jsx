@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="bg-[#000]">
       <div className="relative flex text-[#ffffff] pt-[10px] pl-[16px] md:pl-[40px] bg-[#000]">
         <div className="w-[63%]">
-          <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[80px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left   sm:text-amber-300 md:text-blue-600 lg:text-emerald-700 lg:text-[6.5rem]">
+          <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[80px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left   lg:text-[6.5rem]">
             Dominate <br />
             the world <br /> with <br /> every <br /> win.
           </h1>

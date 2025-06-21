@@ -5,10 +5,11 @@ import CommunityIcon from "../assets/Images/CommunityIcon.png";
 import fourVfour from "../assets/Images/4V4.png";
 import TrophyIcon from "../assets/Images/TrophyIcon.png";
 import FreeToPlay from "../../src/assets/Images/FreeToPlay.png";
+
 export default function TournamentCard() {
   return (
     <section className=" border-[1px] w-[300px] border-[white] md:w-[300px] mt-[60px] mb-[60px]">
-      <img className="w-[300px]" src={Tournament} alt="" />
+      <img className="w-[300px]" src="" alt="" />
 
       <div className="bg-[#1c1c1c]  py-[10px] px-[10px] md:py-[15px] md:px-[15px] ">
         <h3 className="text-[#fff]  md:text-[24px] ">Call of duty</h3>

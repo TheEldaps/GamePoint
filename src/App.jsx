@@ -9,15 +9,16 @@ import Signup from "./pages/Signup";
 
 export default function App() {
   return (
+    // <h1>Hello everyone</h1>
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/dashboard" element={<DashboardHome />} />
+        {/* <Route path="/dashboard" element={<DashboardHome />} />
         <Route path="/wallet" element={<DashboardWallet />} />
         <Route path="/settings" element={<DashboardSettings />} />
         <Route path="/tournaments" element={<DashboardTournaments />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Signup" element={<Signup />} /> */}
       </Routes>
     </Router>
   );
