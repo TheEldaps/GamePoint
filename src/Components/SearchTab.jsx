@@ -14,7 +14,8 @@ export default function SearchTab() {
       <button className="md:hidden" onClick={() => setShowNav((prev) => !prev)}>
         {showNav ? "Close" : "Menu"}
       </button>
-      {showNav && <SideNav />} {/* mobile view side nav */}
+      {showNav && <SideNav vanishOnBigScreen={true} />}{" "}
+      {/* mobile view side nav */}
       {/* Desktop View */}
       <div className="hidden md:flex bg-[#0F0F0F] pl-[10px] py-[2px]  grow max-w-[700px] items-center h-[40px] border-[#008000] border-[1px] ">
         <img className=" w-[20px] " src={SearchIcon} alt="search-icon" />

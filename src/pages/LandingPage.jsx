@@ -10,7 +10,6 @@ import Footer from "../Components/Footer";
 export default function LandingPage() {
   return (
     <div className=" pb-[50px] min-h-[200vh] bg-[#0F0F0F]">
-      <h1 className="text-white">Hello World</h1>
       <Nav />
       <HeroSection />
       <GameFrame />

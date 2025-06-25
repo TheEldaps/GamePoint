@@ -6,11 +6,15 @@ import Tournament from "../assets/Images/Tournament_Icon.png";
 import Wallet from "../assets/Images/Wallet_Icon.png";
 import { useState } from "react";
 
-export default function SideNav() {
+export default function SideNav({ vanishOnBigScreen }) {
   const [active, setActive] = useState("");
 
   return (
-    <nav className="h-[95vh] md:h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ">
+    <nav
+      className={`h-[95vh] md:h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ${
+        vanishOnBigScreen ? "md:hidden" : "md:block"
+      }`}
+    >
       <div className="flex  h-[47vh]  flex-col gap-[10px] ">
         <SideNavLink
           src={Home}

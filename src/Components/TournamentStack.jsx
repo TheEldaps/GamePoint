@@ -16,11 +16,11 @@ export default function TournamentStack() {
           // })
 
           <TournamentCard />
-          <TournamentCard />
-          <TournamentCard />
-          <TournamentCard />
-          <TournamentCard />
-          <TournamentCard />
+          // <TournamentCard />
+          // <TournamentCard />
+          // <TournamentCard />
+          // <TournamentCard />
+          // <TournamentCard />
         }
       </section>
     </>

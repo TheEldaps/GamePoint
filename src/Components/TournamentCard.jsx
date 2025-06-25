@@ -5,8 +5,13 @@ import CommunityIcon from "../assets/Images/CommunityIcon.png";
 import fourVfour from "../assets/Images/4V4.png";
 import TrophyIcon from "../assets/Images/TrophyIcon.png";
 import FreeToPlay from "../../src/assets/Images/FreeToPlay.png";
+import { useEffect } from "react";
 
 export default function TournamentCard() {
+  useEffect(() => {
+    fetch("https://localhost:4000");
+  }, []);
+
   return (
     <section className=" border-[1px] w-[300px] border-[white] md:w-[300px] mt-[60px] mb-[60px]">
       <img className="w-[300px]" src="" alt="" />
