@@ -1,53 +1,30 @@
-import Tournament from "../assets/Images/Tournament.png";
-import Calendar from "../assets/Images/Calendar.png";
+// import Tournament from "../assets/Images/Tournament.png";
 import ButtonPad from "../assets/Images/ButtonPadIcon.png";
-import CommunityIcon from "../assets/Images/CommunityIcon.png";
-import fourVfour from "../assets/Images/4V4.png";
 import TrophyIcon from "../assets/Images/TrophyIcon.png";
-import FreeToPlay from "../../src/assets/Images/FreeToPlay.png";
-import { useEffect } from "react";
+import { useState } from "react";
 
-export default function TournamentCard() {
-  useEffect(() => {
-    fetch("https://localhost:4000");
-  }, []);
+export default function TournamentCard({ gameData }) {
+  const [showDescription, setShowDescription] = useState(false);
+  const shortenedDescription = gameData.description.slice(0, 120) + "...";
 
   return (
     <section className=" border-[1px] w-[300px] border-[white] md:w-[300px] mt-[60px] mb-[60px]">
-      <img className="w-[300px]" src="" alt="" />
-
+      <img className="w-[300px]" src={gameData.thumb} alt="" />
+      {console.log(gameData)}
       <div className="bg-[#1c1c1c]  py-[10px] px-[10px] md:py-[15px] md:px-[15px] ">
-        <h3 className="text-[#fff]  md:text-[24px] ">Call of duty</h3>
+        <h3 className="text-[#fff]  md:text-[24px] ">{gameData.title}</h3>
 
-        <ul className=" grid grid-cols-2 px-[0px] md:gap-x-[10px] gap-y-[10px] md:gap-y-[15px] text-[0.6rem] md:text-[1.1rem] list-none pb-[10px] mt-[5px] mb-[5px] font-['Georgia'] text-[#7E7F7F]">
-          <li className="flex items-center">
-            <img
-              className="w-[20px] md:w-[30px]"
-              src={Calendar}
-              alt="Calendar icon"
-            />
-            <span className="">10 Feb, 2023 </span>
-          </li>
-
-          <li className="flex items-center">
-            <img
-              className="w-[20px] md:w-[30px]"
-              src={FreeToPlay}
-              alt="free to play icon"
-            />
-            <span className="">Free play</span>
-          </li>
-
-          <li className="flex items-center">
-            <img className="w-[20px] md:w-[30px]" src={fourVfour} alt="" />
-            <span className="">4v4</span>
-          </li>
-
-          <li className="flex items-center">
-            <img className="w-[20px] md:w-[30px]" src={CommunityIcon} alt="" />
-            <span className="">10/48</span>
-          </li>
-        </ul>
+        <p className="  px-[0px] md:gap-x-[10px] gap-y-[10px] md:gap-y-[15px] text-[0.8rem] pb-[10px] mt-[10px] mb-[5px] font-['Georgia'] text-[#7E7F7F]">
+          {showDescription ? gameData.description : shortenedDescription}
+          <button
+            className="text-[blue] inline-block pr-[5px]"
+            onClick={() => {
+              setShowDescription((prev) => !prev);
+            }}
+          >
+            {showDescription ? "show less" : "show more"}
+          </button>
+        </p>
 
         <section className="bg-[#242424] flex items-center justify-center text-[#fff] text-center text-[0.8rem] md:text-[1.2rem] font-[800] py-[7px] md:py-[15px]">
           <img
@@ -55,7 +32,7 @@ export default function TournamentCard() {
             src={TrophyIcon}
             alt="trophy icon"
           />
-          <span>N10,000</span>
+          <span>Free</span>
         </section>
 
         <section className="w-[100%] text-[24px] font-[bold] mt-[20px]">

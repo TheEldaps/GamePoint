@@ -8,7 +8,7 @@ export default function ContentTournament() {
           My Tournament
         </h2>
 
-        <section className="flex flex-wrap  justify-evenly h-[500px] md:h-[650px] overflow-hidden mt-[20px] gap-[40px] gap-y-[60px]">
+        <section className="flex flex-wrap  justify-evenly h-[450px] md:h-[600px] overflow-hidden mt-[20px] gap-[40px] gap-y-[60px]">
           <TournamentCard />
           <TournamentCard />
           <TournamentCard />
@@ -19,7 +19,7 @@ export default function ContentTournament() {
         <h2 className=" pl-[40px] mt-[30px] md:mt-[50px] mb-[0px] font-[bold] text-[2.5rem]">
           Physical tournament
         </h2>
-        <section className="flex  flex-wrap  justify-evenly h-[500px] md:h-[650px] overflow-hidden mt-[20px] gap-[40px] gap-y-[60px]">
+        <section className="flex  flex-wrap  justify-evenly h-[450px] md:h-[600px] overflow-hidden mt-[20px] gap-[40px] gap-y-[60px]">
           <TournamentCard />
           <TournamentCard />
           <TournamentCard />
