@@ -28,7 +28,7 @@ export default function TournamentStack() {
         Find a Game
       </h1>
 
-      <section className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-y-[150px] overflow-hidden items-center border-[2px] md:gap-x-[80px] md:px-[50px]">
+      <section className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-y-[50px] overflow-hidden items-center border-[2px] md:gap-x-[40px] md:px-[40px]">
         {Loading ? (
           <BounceLoader
             color="#fff"
