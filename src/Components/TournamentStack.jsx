@@ -8,9 +8,9 @@ export default function TournamentStack() {
         Find a Game
       </h1>
 
-      <GameList />
+      <GameList showFewGames={true} />
 
-      <section>
+      <section className="mt-[40px]">
         <GameCatalogBtn />
       </section>
     </section>

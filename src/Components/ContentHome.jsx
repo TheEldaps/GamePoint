@@ -21,18 +21,18 @@ export default function ContentHome() {
         <div className="px-[100px] pb-[60px]">
           <h2 className=" font-[bold] text-[2.5rem]">Upcoming tournament</h2>
           <section className="flex flex-wrap  justify-evenly h-[500px] md:h-[600px] overflow-hidden mt-[20px] gap-[40px] gap-y-[60px] ">
+            {/* <TournamentCard />
             <TournamentCard />
-            <TournamentCard />
-            <TournamentCard />
+            <TournamentCard /> */}
           </section>
         </div>
 
         <div className="px-[100px] pb-[60px]">
           <h2 className=" font-[bold] text-[2.5rem]">Physical tournament</h2>
           <section className="flex flex-wrap  justify-evenly h-[500px] md:h-[600px] overflow-hidden mt-[20px] gap-[40px] gap-y-[60px] ">
+            {/* <TournamentCard />
             <TournamentCard />
-            <TournamentCard />
-            <TournamentCard />
+            <TournamentCard /> */}
           </section>
         </div>
       </section>

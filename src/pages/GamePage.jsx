@@ -26,28 +26,31 @@ export default function GamePage() {
   }, [id]);
 
   return (
-    <section className="flex justify-center items-center min-h-[100vh] bg-[#0F0F0F] text-[white]">
+    <section>
       <Nav />
-      {loading ? (
-        <BounceLoader
-          color="#5C9703"
-          size={80}
-          loading={true}
-          speedMultiplier={1.5}
-        />
-      ) : (
-        <div>
-          <h1>{`Welcome to the ${fetchedGame.title} page`} </h1>
-          <img src={fetchedGame.thumb} alt="" />
-          <iframe
-            src={fetchedGame.url}
-            width={fetchedGame.width}
-            height={fetchedGame.height}
-            scrolling="none"
-            frameborder="0"
-          ></iframe>
-        </div>
-      )}
+
+      <section className="flex justify-center items-center min-h-[100vh] bg-[#0F0F0F] text-[white]">
+        {loading ? (
+          <BounceLoader
+            color="#5C9703"
+            size={80}
+            loading={true}
+            speedMultiplier={1.5}
+          />
+        ) : (
+          <div>
+            <h1>{`Welcome to the ${fetchedGame.title} page`} </h1>
+            <img src={fetchedGame.thumb} alt="" />
+            <iframe
+              src={fetchedGame.url}
+              width={fetchedGame.width}
+              height={fetchedGame.height}
+              scrolling="none"
+              frameborder="0"
+            ></iframe>
+          </div>
+        )}
+      </section>
     </section>
   );
 }

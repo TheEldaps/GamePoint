@@ -11,7 +11,7 @@ export default function SideNav({ vanishOnBigScreen }) {
 
   return (
     <nav
-      className={`h-[95vh] md:h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ${
+      className={`border-1 h-[95vh] md:h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ${
         vanishOnBigScreen ? "md:hidden" : "md:block"
       }`}
     >
@@ -31,7 +31,7 @@ export default function SideNav({ vanishOnBigScreen }) {
         <SideNavLink
           src={Tournament}
           icon="Tournament-icon"
-          title="Tournaments"
+          title="Games"
           path="/tournaments"
           onClick={() => {
             setActive("tournament");

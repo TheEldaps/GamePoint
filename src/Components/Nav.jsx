@@ -19,7 +19,7 @@ export default function Nav() {
       </li>
       <li>
         <Link to="/tournaments" className={LinkStyles}>
-          Tournament
+          Games
         </Link>
       </li>
       <li>
@@ -58,7 +58,7 @@ export default function Nav() {
       </nav>
       {/* Mobile nav */}
       {toggleNav && (
-        <div className="block top-[100%] left-0 w-full border-t-1 border-t-white bg-black md:hidden">
+        <div className="block top-[100%] left-0 w-full border-t-1 border-t-white border-r-1 border-r-[white] bg-black md:hidden">
           {NavList}
         </div>
       )}

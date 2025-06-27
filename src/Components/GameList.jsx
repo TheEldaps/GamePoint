@@ -3,7 +3,7 @@ import TournamentCard from "./TournamentCard";
 import { useState, useEffect } from "react";
 import { BounceLoader } from "react-spinners";
 
-export default function GameList() {
+export default function GameList({ showFewGames = false }) {
   const [gameList, setGameList] = useState([]);
   const [Loading, setLoading] = useState(true);
 
@@ -23,8 +23,10 @@ export default function GameList() {
     fetchGames();
   }, []);
 
+  const gamesToDisplay = showFewGames ? gameList.slice(0, 8) : gameList;
+
   return (
-    <section className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-y-[50px] overflow-hidden items-center border-[2px] md:gap-x-[40px] md:px-[40px]">
+    <section className="flex flex-col md:flex-row md:flex-wrap md:justify-evenly md:gap-y-[50px] items-center md:gap-x-[20px] md:px-[20px]">
       {Loading ? (
         <BounceLoader
           color="#fff"
@@ -34,7 +36,7 @@ export default function GameList() {
           cssOverride={{ margin: "200px auto" }}
         />
       ) : (
-        gameList.map((game) => {
+        gamesToDisplay.map((game) => {
           return <TournamentCard key={game.id} gameData={game} />;
         })
       )}

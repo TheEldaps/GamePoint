@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 export default function GameCatalogBtn() {
   return (
-    <div>
+    <div className="flex justify-center ">
       <Link
         to="/tournaments"
-        className="flex items-center px-[20px] py-[10px] text-[white] text-[2rem] rounded-2xl hover:bg-[#8ac72f9b] bg-[#8bc72f]"
+        className="flex justify-center md:w-[600px]  px-[20px] py-[10px] text-[white] text-[1.6rem] rounded-2xl hover:bg-[#8ac72f9b] hover:text-[#ffffff97] bg-[#5C9703] mb-[80px]"
       >
         More Games &#8594;
       </Link>
