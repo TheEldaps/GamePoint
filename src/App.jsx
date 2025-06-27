@@ -6,10 +6,10 @@ import DashboardSettings from "./pages/DashboardSettings";
 import DashboardWallet from "./pages/DashboardWallets";
 import NotFound from "./pages/NotFound";
 import Signup from "./pages/Signup";
+import GamePage from "./pages/GamePage";
 
 export default function App() {
   return (
-    // <h1>Hello everyone</h1>
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -19,6 +19,7 @@ export default function App() {
         <Route path="/tournaments" element={<DashboardTournaments />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/Games/:id" element={<GamePage />} />
       </Routes>
     </Router>
   );

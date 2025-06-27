@@ -13,7 +13,9 @@ export default function TournamentCard({ gameData }) {
       <img className="w-[300px]" src={gameData.thumb} alt="" />
       {console.log(gameData)}
       <div className="bg-[#1c1c1c]  py-[10px] px-[10px] md:py-[15px] md:px-[15px] ">
-        <h3 className="text-[#fff]  md:text-[24px] ">{gameData.title}</h3>
+        <h3 className="flex items-center text-[#fff]  md:text-[24px] h-[60px] ">
+          {gameData.title}
+        </h3>
 
         <p className="  px-[0px] md:gap-x-[10px] gap-y-[10px] md:gap-y-[15px] text-[0.9rem] pb-[10px] mt-[10px] mb-[5px] font-['Georgia'] text-[#ffffffa4]">
           {showDescription ? gameData.description : shortenedDescription}
@@ -48,10 +50,10 @@ export default function TournamentCard({ gameData }) {
             />
             Play Game
           </Link>
-
+          {/* 
           <button className="bg-[#1c1c1c] cursor-pointer md:h-[60px] hover:bg-[#3a3b38] hover:text-[#000] text-[#fff] text-[0.8rem] py-[8px] md:py-[8px]  md:text-[1.2rem] border-[2px] border-[#4A4A4A] font-[Arial] block  w-[100%]">
             View details
-          </button>
+          </button> */}
         </section>
       </div>
     </section>
