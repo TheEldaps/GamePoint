@@ -21,7 +21,7 @@ export default function Logo({
         <span
           className={`text-[${text}] md:text-4xl font-[Arial] font-[900] inline`}
         >
-          A10
+          GamePoint
         </span>
       </Link>
     </>
