@@ -38,17 +38,26 @@ export default function GamePage() {
             speedMultiplier={1.5}
           />
         ) : (
-          <div>
-            <h1>{`Welcome to the ${fetchedGame.title} page`} </h1>
-            <img src={fetchedGame.thumb} alt="" />
-            <iframe
-              src={fetchedGame.url}
-              width={fetchedGame.width}
-              height={fetchedGame.height}
-              scrolling="none"
-              frameborder="0"
-            ></iframe>
-          </div>
+          <main className="min-h-[150vh]">
+            <h1 className="text-[2rem] mt-[20px] border-1  text-center">
+              {fetchedGame.title}{" "}
+            </h1>
+            <section className="flex flex-col md:flex-row justify-around gap-[20px] mt-[50px] border-1 p-[40px] max-w-[1200px]">
+              <iframe
+                className="md:w-[80%] bg-green-300"
+                src={fetchedGame.url}
+                // width={fetchedGame.width}
+                height={fetchedGame.height}
+                scrolling="none"
+                frameborder=""
+              ></iframe>
+
+              <div className="flex flex-col justify-center max-w-[20%] border w-[100%] mt-[20px] md:mt-[0] gap-[10px]">
+                <p className="h-[100%] ">{fetchedGame.instructions}</p>
+                <p className="font-bold">{fetchedGame.category}</p>
+              </div>
+            </section>
+          </main>
         )}
       </section>
     </section>

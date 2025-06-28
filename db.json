@@ -204,6 +204,54 @@
       "thumb": "https://img.gamemonetize.com/6kw2gj2vjs2uztzkl5xyrxrpreo5t6lo/512x384.jpg",
       "width": "800",
       "height": "600"
+    },
+    {
+      "id": "67689",
+      "title": "Tricky Arrow 2",
+      "description": "In this precision-shooting game, your skills will be put to the test as you aim to hit a spinning circle target with perfect accuracy. However, the challenge doesnt end there, as you must also avoid other arrows flying towards you, making each moment a thrilling puzzle to solve. With simple yet addictive gameplay, this game is perfect for players of all ages who enjoy a good reflex-testing challenge. Your aim and quick reflexes will be put to the limit as you navigate through the twists and turns of this game.",
+      "instructions": "Mouse click or tap to play",
+      "url": "https://html5.gamemonetize.com/mlj93g4er4ynh1smd4fm0c0ecbuygg68/",
+      "category": "Shooting",
+      "tags": "Action, Arcade, arrow, Bow, New, Shoot, Shooting, Skill, touch, unity, WebGL",
+      "thumb": "https://img.gamemonetize.com/mlj93g4er4ynh1smd4fm0c0ecbuygg68/512x384.jpg",
+      "width": "1920",
+      "height": "1080"
+    },
+    {
+      "id": "67850",
+      "title": "Drive Mad 2",
+      "description": "Want to begin a wildly exciting driving challenge? Welcome to Drive Mad 2, the craziest 3D driving simulation adventure youve ever seen. Youll be racing your sports car around many strange and dangerous tracks! There are all kinds of traps and mechanisms here. For example, sledgehammers, bottles, windmills, etc.",
+      "instructions": "Mouse click or tap to play ",
+      "url": "https://html5.gamemonetize.com/gisd00oq9kft4npyvub4v2ibqrp3x98j/",
+      "category": "Racing",
+      "tags": "Adventure, Car, Fun, Simulation",
+      "thumb": "https://img.gamemonetize.com/gisd00oq9kft4npyvub4v2ibqrp3x98j/512x384.jpg",
+      "width": "1334",
+      "height": "750"
+    },
+    {
+      "id": "67815",
+      "title": "Drive Zone",
+      "description": "Dive into a world of speed and thrill! This game takes you on a ride through city streets, rally tracks, and wild off-road terrains. Feel the power of the engines, master every turn, and unleash your inner racer. Its not just about speed &mdash; its about freedom, challenge, and the rush of the unknown. Are you ready to become a legend on every surface?",
+      "instructions": "Desktop W - Accelerator S - Brake Reverse A - Left D - Right C - Camera Switch Esc - Pause Mobile Use on-screen controls ",
+      "url": "https://html5.gamemonetize.com/preebt8pchos3u8ul57dozj2gulh46ms/",
+      "category": "Racing",
+      "tags": "3D, Car, Driving, endless, Game, jeep, Mobile, offroad, Race, Racing, realistic, Road, Simulator, Sport",
+      "thumb": "https://img.gamemonetize.com/preebt8pchos3u8ul57dozj2gulh46ms/512x384.jpg",
+      "width": "800",
+      "height": "600"
+    },
+    {
+      "id": "67765",
+      "title": "Geometry Dash Unblocked",
+      "description": "GeometryDashUnblocked is a fun sidescrolling action arcade rush. Control the geometric cubes through a large number of spikes. Seize the moment and tap to jump so that the cube avoids collisions and survives longer. Challenge the farthest distance to get a high score! Unlock more funny skins to participate in the challenge and give you a different experience!",
+      "instructions": "Mouse click or tap to play ",
+      "url": "https://html5.gamemonetize.com/m84en44qjczb1b5846pzll223s40kar7/",
+      "category": "Arcade",
+      "tags": "Avoid, jump, survival",
+      "thumb": "https://img.gamemonetize.com/m84en44qjczb1b5846pzll223s40kar7/512x384.jpg",
+      "width": "1920",
+      "height": "720"
     }
   ]
 }
