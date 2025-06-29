@@ -15,8 +15,8 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/dashboard" element={<DashboardHome />} />
         <Route path="/wallet" element={<DashboardWallet />} />
-        <Route path="/settings" element={<DashboardSettings />} />
-        <Route path="/tournaments" element={<DashboardTournaments />} />
+        {/* <Route path="/settings" element={<DashboardSettings />} /> */}
+        <Route path="/Games" element={<DashboardTournaments />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Games/:id" element={<GamePage />} />
