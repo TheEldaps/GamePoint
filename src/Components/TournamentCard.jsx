@@ -20,7 +20,7 @@ export default function TournamentCard({ gameData }) {
         <p className="  px-[0px] md:gap-x-[10px] gap-y-[10px] md:gap-y-[15px] text-[0.9rem] pb-[10px] mt-[10px] mb-[5px] font-['Georgia'] text-[#ffffffa4]">
           {showDescription ? gameData.description : shortenedDescription}
           <button
-            className="text-[#3636ebb8] inline-block pr-[5px]"
+            className="text-[#3636ebb8] pl-[5px] inline-block pr-[5px]"
             onClick={() => {
               setShowDescription((prev) => !prev);
             }}

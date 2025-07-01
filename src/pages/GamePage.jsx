@@ -40,11 +40,11 @@ export default function GamePage() {
         ) : (
           <main className="min-h-[150vh]">
             <h1 className="text-[2rem] mt-[20px] border-1  text-center">
-              {fetchedGame.title}{" "}
+              {fetchedGame.title}
             </h1>
             <section className="flex flex-col md:flex-row justify-around gap-[20px] mt-[50px] border-1 p-[40px] max-w-[1200px]">
               <iframe
-                className="md:w-[80%] bg-green-300"
+                className="md:w-[80%] bg-[#2a292963]"
                 src={fetchedGame.url}
                 // width={fetchedGame.width}
                 height={fetchedGame.height}

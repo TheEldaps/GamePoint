@@ -7,9 +7,9 @@ export default function PlayTournamentBtn({
   color = "bg-[#5C9703]",
 }) {
   return (
-    <Link to="/tournaments" className=" flex justify-start">
+    <Link to="/Games" className=" flex justify-start">
       <button
-        className={`${styles} ${pad} flex items-center ${color} cursor-pointer hover:bg-[#46562da8]`}
+        className={`${styles} ${pad} flex items-center ${color} cursor-pointer hover:bg-[#729360a6]`}
       >
         <img
           className="w-[20px] mr-[5px] inline text-[#000]"
@@ -17,7 +17,7 @@ export default function PlayTournamentBtn({
           alt=""
         />
         <span className={` text-[500] text-[Swis721 Blk BT ]text-center`}>
-          Play tournaments
+          View Games
         </span>
       </button>
     </Link>
