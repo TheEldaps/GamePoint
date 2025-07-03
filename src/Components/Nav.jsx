@@ -45,8 +45,8 @@ export default function Nav() {
   }
 
   return (
-    <header className="bg-black border-b-1 border-b-white relative ">
-      <nav className="flex justify-between items-center px-7 md:px-15 py-[10px] text-lg min-h-[40px] absolute top-[40px]">
+    <header className="bg-black border-b-1 border-b-white fixed ">
+      <nav className="flex justify-between  items-center px-7 md:px-15 py-[10px] text-lg min-h-[40px]">
         <Logo width="100px" text="2rem" imgWidth="40px" imgHeight="40px" />
 
         <button className="md:hidden text-white text-xl" onClick={handleClick}>
@@ -54,12 +54,12 @@ export default function Nav() {
         </button>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex ">{NavList}</div>
+        {/* <div className="hidden md:flex ">{NavList}</div> */}
       </nav>
       {/* Mobile nav */}
       {toggleNav && (
         <div className="block top-[100%] left-0 w-full border-t-1 border-t-white border-r-1 border-r-[white] bg-black md:hidden">
-          {NavList}
+          {/* {NavList} */}
         </div>
       )}
     </header>
