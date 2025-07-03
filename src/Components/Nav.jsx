@@ -45,8 +45,8 @@ export default function Nav() {
   }
 
   return (
-    <header className="bg-black border-b-1 border-b-white ">
-      <nav className="flex justify-between relative items-center px-7 md:px-15 py-[10px] text-lg min-h-[40px]">
+    <header className="bg-black border-b-1 border-b-white relative ">
+      <nav className="flex justify-between items-center px-7 md:px-15 py-[10px] text-lg min-h-[40px] absolute top-[40px]">
         <Logo width="100px" text="2rem" imgWidth="40px" imgHeight="40px" />
 
         <button className="md:hidden text-white text-xl" onClick={handleClick}>

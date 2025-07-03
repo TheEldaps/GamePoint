@@ -19,5 +19,6 @@ export default function GameCard() {
     //     but with some nostalgia to them.
     //   </p>
     // </div>
+    <div>nothing</div>
   );
 }
