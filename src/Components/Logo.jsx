@@ -19,7 +19,7 @@ export default function Logo({
           alt="App logo"
         />
         <span
-          className={`text-[${text}] md:text-4xl font-[Arial] font-[900] inline`}
+          className={`text-[${text}] md:text-3xl font-[Arial] font-[900] inline`}
         >
           GamePoint
         </span>

@@ -8,7 +8,7 @@ export default function Nav() {
   const [toggleNav, setToggleNav] = useState(false);
 
   const LinkStyles =
-    " no-underline block px-5 py-2 sm:text-base lg:text-lg lg:px-8 xl:text-2xl text-white hover:bg-[#5C9703] transition duration-300 ease-in-out";
+    " no-underline block px-4 py-2 sm:text-base lg:text-lg lg:px-8 xl:text-2xl text-white hover:bg-[#5C9703] transition duration-300 ease-in-out";
 
   const NavList = (
     <ul className="list-none flex flex-col md:flex-row bg-[#9aef501e] justify-between  text-base md:bg-transparent">
@@ -45,16 +45,16 @@ export default function Nav() {
   }
 
   return (
-    <header className="bg-black border-b-1 border-b-white fixed ">
-      <nav className="flex justify-between  items-center px-7 md:px-15 py-[10px] text-lg min-h-[40px]">
-        <Logo width="100px" text="2rem" imgWidth="40px" imgHeight="40px" />
+    <header className="w-[100vw] bg-black border-b-1 fixed z-[2] border-b-white ">
+      <nav className="flex justify-between items-center px-7 md:px-8 py-[10px] text-lg min-h-[40px]">
+        <Logo width="100px" text="1.5rem" imgWidth="40px" imgHeight="40px" />
 
         <button className="md:hidden text-white text-xl" onClick={handleClick}>
           {toggleNav ? "Close" : "Menu"}
         </button>
 
         {/* Desktop nav */}
-        {/* <div className="hidden md:flex ">{NavList}</div> */}
+        <div className="hidden md:flex">{NavList}</div>
       </nav>
       {/* Mobile nav */}
       {toggleNav && (

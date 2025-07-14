@@ -5,7 +5,7 @@ import HeroImagePhone from "../assets/Images/Heroimage-phone-02.png";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#000]">
+    <section className="bg-[#000] pt-[30px]">
       <div className="relative flex text-[#ffffff] pt-[10px] pl-[16px] md:pl-[40px] bg-[#000]">
         <div className="w-[63%]">
           <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[80px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left   lg:text-[6.5rem]">
