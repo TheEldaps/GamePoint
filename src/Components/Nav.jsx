@@ -56,10 +56,11 @@ export default function Nav() {
         {/* Desktop nav */}
         <div className="hidden md:flex">{NavList}</div>
       </nav>
+
       {/* Mobile nav */}
       {toggleNav && (
-        <div className="block top-[100%] left-0 w-full border-t-1 border-t-white border-r-1 border-r-[white] bg-black md:hidden">
-          {/* {NavList} */}
+        <div className="block top-[100%] z-[2] left-0 w-full border-t-1 border-t-white border-r-1 border-r-[white] bg-black md:hidden">
+          {NavList}
         </div>
       )}
     </header>
