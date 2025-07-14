@@ -20,7 +20,7 @@ export default function SideNav({ vanishOnBigScreen }) {
           src={Home}
           icon="home-icon"
           title="Home"
-          path="/dashboard"
+          path="/"
           onClick={() => {
             setActive("home");
           }}
@@ -40,7 +40,7 @@ export default function SideNav({ vanishOnBigScreen }) {
           active={active}
         />
 
-        <SideNavLink
+        {/* <SideNavLink
           src={Wallet}
           icon="Wallet-icon"
           title="Wallet"
@@ -50,8 +50,8 @@ export default function SideNav({ vanishOnBigScreen }) {
           }}
           id="wallet"
           active={active}
-        />
-        <SideNavLink
+        /> */}
+        {/* <SideNavLink
           src={Settings}
           icon="Settings-icon"
           title="Settings"
@@ -61,10 +61,10 @@ export default function SideNav({ vanishOnBigScreen }) {
           }}
           id="settings"
           active={active}
-        />
+        /> */}
       </div>
 
-      <div className="flex flex-col-reverse grow pb-[25px] ">
+      {/* <div className="flex flex-col-reverse grow pb-[25px] ">
         <SideNavLink
           src={Logout}
           bg="bg-[#1E2415]"
@@ -72,7 +72,7 @@ export default function SideNav({ vanishOnBigScreen }) {
           title="LOG-OUT"
           textcol="text-[#8BC72F]"
         />
-      </div>
+      </div> */}
     </nav>
   );
 }

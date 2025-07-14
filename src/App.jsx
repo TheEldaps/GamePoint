@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/dashboard" element={<DashboardHome />} />
+        {/* <Route path="/dashboard" element={<DashboardHome />} /> */}
         {/* <Route path="/wallet" element={<DashboardWallet />} /> */}
         {/* <Route path="/settings" element={<DashboardSettings />} /> */}
         <Route path="/Games" element={<DashboardTournaments />} />

@@ -13,20 +13,20 @@ export default function Nav() {
   const NavList = (
     <ul className="list-none flex flex-col md:flex-row bg-[#9aef501e] justify-between  text-base md:bg-transparent">
       <li>
-        <Link to="/dashboard" className={LinkStyles}>
+        <Link to="/" className={LinkStyles}>
           Home
         </Link>
       </li>
       <li>
-        <Link to="/tournaments" className={LinkStyles}>
+        <Link to="/Games" className={LinkStyles}>
           Games
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/dashboard" className={LinkStyles}>
           Dashboard
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/Signup" className={LinkStyles}>
           Sign up
