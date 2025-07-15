@@ -2,8 +2,7 @@ export default function Input({ title, placeholder }) {
   return (
     <div className=" my-[30px]">
       <label htmlFor={title} className=" w-[130px] mb-[50px]">
-        {" "}
-        {title}{" "}
+        {title}
       </label>
       <input
         type="text"

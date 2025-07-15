@@ -10,7 +10,8 @@ export default function HeroSection() {
         <div className="w-[63%]">
           <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[80px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left   lg:text-[6.5rem]">
             Dominate <br />
-            the world <br /> with <br /> every <br /> win.
+            <span className="whitespace-nowrap">the world</span> <br /> with{" "}
+            <br /> every <br /> win.
           </h1>
 
           <p className=" block w-[80%]  max-w-[100%] text-[0.9rem] mt-[20px] mb-[10px] md:text-[1.125rem] md:w-[72%] xl:w-[65%]">
@@ -21,7 +22,7 @@ export default function HeroSection() {
 
           <PlayTournamentBtn
             color="bg-[#5C9703]"
-            styles="sm:block min-w-[50px] text-[0.7rem] font-bold md:py-[20px] md:px-[50px] md:text-[1rem] py-[10px] px-[20px] font-[Swiss721 Blk BT] my-[10px] text-[#000] "
+            styles="sm:block min-w-[50px] text-[0.7rem] font-bold md:py-[20px] md:px-[50px] md:text-[1rem] pt-[10px] px-[20px] font-[Swiss721 Blk BT] my-[10px] text-[#000] "
             pad="py-[10px] px-[30px]"
           />
         </div>
