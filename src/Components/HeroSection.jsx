@@ -6,7 +6,7 @@ import HeroImagePhone from "../assets/Images/Heroimage-phone-02.png";
 export default function HeroSection() {
   return (
     <section className="bg-[#000] pt-[30px]">
-      <div className="relative flex text-[#ffffff] pt-[10px] pl-[16px] md:pl-[40px] bg-[#000]">
+      <div className="relative flex text-[#ffffff] pt-[10px] pl-[16px] sm:pl-[50px] md:pl-[40px] bg-[#000]">
         <div className="w-[63%]">
           <h1 className=" text-[3.5rem] leading-[60px]  font-[Arial]  md:text-[80px] font-[1000] md:leading-[96px] mb-[20px] mt-[40px] text-left   lg:text-[6.5rem]">
             Dominate <br />
@@ -14,7 +14,7 @@ export default function HeroSection() {
             <br /> every <br /> win.
           </h1>
 
-          <p className=" block w-[80%]  max-w-[100%] text-[0.9rem] mt-[20px] mb-[10px] md:text-[1.125rem] md:w-[72%] xl:w-[65%]">
+          <p className=" block w-[80%]  max-w-[100%] text-[0.8rem] mt-[20px] mb-[10px] md:text-[1.125rem] md:w-[72%] xl:w-[65%]">
             Play against or alongside other iconic gamers and show the wonder{" "}
             <br className="hidden md:inline lg:hidden" /> of your skills in
             legendary tournament.
@@ -42,7 +42,7 @@ export default function HeroSection() {
           <img
             src={HeroImagePhone}
             alt=""
-            className="w-[290px] h-[430px] lg:hidden sm:h-120 sm:top-10 sm:w-[360px] absolute top-[120px] right-[0px] md:w-[520px] md:h-[670px] md:top-[130px] md:right-0"
+            className="w-[240px] h-[410px] lg:hidden xs:h-500 xs:w-[300px] sm:h-120 sm:top-10 sm:w-[360px] absolute top-[130px] right-[0px] md:w-[520px] md:h-[670px] md:top-[130px] md:right-0"
           />
         </div>
       </div>
