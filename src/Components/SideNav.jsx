@@ -1,9 +1,9 @@
 import SideNavLink from "./SideNavLink";
 import Home from "../assets/Images/Home_icon.png";
-import Logout from "../assets/Images/logout_Icon.png";
-import Settings from "../assets/Images/Settings_Icon.png";
+// import Logout from "../assets/Images/logout_Icon.png";
+// import Settings from "../assets/Images/Settings_Icon.png";
 import Tournament from "../assets/Images/Tournament_Icon.png";
-import Wallet from "../assets/Images/Wallet_Icon.png";
+// import Wallet from "../assets/Images/Wallet_Icon.png";
 import { useState } from "react";
 
 export default function SideNav({ vanishOnBigScreen }) {
@@ -11,11 +11,11 @@ export default function SideNav({ vanishOnBigScreen }) {
 
   return (
     <nav
-      className={`border-1 h-[95vh] md:h-[90%] bg-[#121212] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ${
+      className={`border-1 w-[100%] md:h-[90%] bg-[#2a2929] list-none pt-[20px] px-[20px] fixed md:w-[250px] flex flex-col top-[36px] md:top-[70px] flex-grow ${
         vanishOnBigScreen ? "md:hidden" : "md:block"
       }`}
     >
-      <div className="flex  h-[47vh]  flex-col gap-[10px] ">
+      <div className="flex   flex-col gap-[10px] ">
         <SideNavLink
           src={Home}
           icon="home-icon"

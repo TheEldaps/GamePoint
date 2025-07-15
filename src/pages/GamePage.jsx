@@ -27,7 +27,7 @@ export default function GamePage() {
 
   return (
     <section>
-      <Nav />
+      {/* <Nav /> */}
 
       <section className="flex justify-center items-center min-h-[100vh] bg-[#0F0F0F] text-[white]">
         {loading ? (
