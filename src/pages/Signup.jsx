@@ -1,11 +1,13 @@
 import Input from "../Components/Input";
 import Logo from "../Components/Logo";
 import { Link } from "react-router-dom";
+import Nav from "../Components/Nav";
 
 export default function LoginPage() {
   return (
     <section className="flex justify-center pb-[50px] bg-[#0F0F0F] text-[white] ">
-      <section className=" pt-[20px] mt-[50px] px-[40px] min-w-[500px] border">
+      <Nav />
+      <section className=" pt-[20px] mt-[150px] px-[40px] min-w-[500px] border">
         <Logo />
 
         <section className="mb-[50px]">
@@ -25,8 +27,8 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <button className="block bg-[green] py-[8px] cursor-pointer w-[70%] mx-[auto] mt-[40px] mb-[60px]">
-              <Link className="block no-underline">Create Account</Link>
+            <button className="block bg-[green] hover:bg-[#008000a5] py-[8px] cursor-pointer w-[70%] mx-[auto] mt-[40px] mb-[60px]">
+              <Link className="block no-underline ">Create Account</Link>
             </button>
 
             <span>
@@ -34,7 +36,7 @@ export default function LoginPage() {
             </span>
 
             <div className="flex my-[20px]">
-              <hr className="w-[45%]" /> Or <hr className="w-[45%]" />
+              <hr className="w-[44%]" /> Or <hr className="w-[44%]" />
             </div>
           </div>
 

@@ -9,7 +9,7 @@ export default function Input({ title, placeholder }) {
         type="text"
         placeholder={placeholder ? placeholder : title}
         id={title}
-        className="block w-[98%] text-[1rem] px-[5px] h-[30px] mt-[8px]"
+        className="block w-[98%] text-[1rem] px-[5px] h-[30px] border-2 border-gray-400 mt-[8px]"
       />
     </div>
   );

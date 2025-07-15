@@ -32,7 +32,7 @@ export default function SideNav({ vanishOnBigScreen }) {
           src={Tournament}
           icon="Tournament-icon"
           title="Games"
-          path="/tournaments"
+          path="/Games"
           onClick={() => {
             setActive("tournament");
           }}
