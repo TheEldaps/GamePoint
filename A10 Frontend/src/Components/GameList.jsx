@@ -29,7 +29,7 @@ export default function GameList({ showFewGames = false }) {
     <section className="flex flex-col md:flex-row md:flex-wrap md:justify-evenly md:gap-y-[50px] items-center md:gap-x-[20px] md:px-[20px]">
       {Loading ? (
         <BounceLoader
-          color="#fff"
+          color="#5C9703"
           size={80}
           loading={true}
           speedMultiplier={1.5}
