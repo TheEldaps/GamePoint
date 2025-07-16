@@ -12,7 +12,9 @@ export default function GamePage() {
   useEffect(() => {
     async function fetchGame() {
       try {
-        const res = await fetch(`http://localhost:4000/games/${id}`);
+        const res = await fetch(
+          `https://gamepoint-backend.onrender.com/games/${id}`
+        );
         const data = await res.json();
         setFetchedGame(data);
       } catch (error) {

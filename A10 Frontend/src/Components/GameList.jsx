@@ -10,7 +10,7 @@ export default function GameList({ showFewGames = false }) {
   useEffect(() => {
     async function fetchGames() {
       try {
-        const res = await fetch("http://localhost:4000/games");
+        const res = await fetch("https://gamepoint-backend.onrender.com/games");
         const data = await res.json();
         setGameList(data);
       } catch (e) {
