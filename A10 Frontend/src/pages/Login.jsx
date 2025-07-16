@@ -5,7 +5,7 @@ import Nav from "../Components/Nav";
 
 export default function LoginPage() {
   return (
-    <section className="flex justify-center h-[100vh] pb-[50px] bg-[#0F0F0F] text-[white] ">
+    <section className="flex justify-center h-[100vh] pb-[40px] bg-[#0F0F0F] text-[white] ">
       <Nav />
       <section className=" pt-[20px] mt-[100px] md:mt-[150px] mx-[20] px-[40px] md:min-w-[500px] sm:border-1">
         <div className="mb-[40px]">
