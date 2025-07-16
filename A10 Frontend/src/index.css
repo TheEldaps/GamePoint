@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+
+
+
+@font-face {
+    font-family: 'Swis721BlkBT';
+    src: url('./assets/Fonts/SWZ721KI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 👇 Marquee Animation  */
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+
+/* * {
+    border: 2px solid red;
+} */
