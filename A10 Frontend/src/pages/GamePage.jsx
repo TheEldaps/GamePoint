@@ -28,10 +28,10 @@ export default function GamePage() {
   }, [id]);
 
   return (
-    <section>
-      {/* <Nav /> */}
+    <section className="">
+      <Nav />
 
-      <section className="flex justify-center items-center min-h-[100vh] bg-[#0F0F0F] text-[white]">
+      <section className="flex justify-center items-center min-h-[95vh] pt-[80px] bg-[#0F0F0F] text-[white]">
         {loading ? (
           <BounceLoader
             color="#5C9703"
