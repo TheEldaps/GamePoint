@@ -44,12 +44,12 @@ export default function GamePage() {
             <h1 className="text-[2rem] mt-[20px] border-1  text-center">
               {fetchedGame.title}
             </h1>
-            <section className="flex flex-col md:flex-row justify-around gap-[20px] mt-[50px] border-1 p-[40px] max-w-[1200px]">
+            <section className="flex flex-col justify-around gap-[20px] mt-[50px] border-1 p-[40px] ">
               <iframe
-                className="md:w-[80%] bg-[#2a292963]"
+                className="w-[90vw] h-[90vh] bg-[#2a292963] border"
                 src={fetchedGame.url}
-                // width={fetchedGame.width}
-                height={fetchedGame.height}
+                width=""
+                height=""
                 scrolling="none"
                 frameborder=""
               ></iframe>
