@@ -40,13 +40,13 @@ export default function GamePage() {
             speedMultiplier={1.5}
           />
         ) : (
-          <main className="min-h-[150vh]">
-            <h1 className="text-[2rem] mt-[20px] border-1  text-center">
-              {fetchedGame.title}
-            </h1>
-            <section className="flex flex-col justify-around gap-[20px] mt-[50px] border-1 p-[40px] ">
+          <main className="h-[100vh]">
+            <section className="flex flex-col justify-around gap-[15px] mt-[20px] border-1 pt-[20px] pb-[5px] px-[50px] ">
+              <h1 className="px-[15px] mx-auto text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-center border-1  text-center">
+                {fetchedGame.title}
+              </h1>
               <iframe
-                className="w-[90vw] h-[90vh] bg-[#2a292963] border"
+                className="w-[80vw] h-[80vh] bg-[#fff] border"
                 src={fetchedGame.url}
                 width=""
                 height=""
@@ -54,9 +54,9 @@ export default function GamePage() {
                 frameborder=""
               ></iframe>
 
-              <div className="flex flex-col justify-center max-w-[20%] border bg-[#fabccf] w-[100%] mt-[20px] md:mt-[0] gap-[10px]">
-                <p className="h-[100%] ">{fetchedGame.instructions}</p>
-                <p className="font-bold">{fetchedGame.category}</p>
+              <div className="flex flex-col text-center justify-center border bg-[#5C9703] w-[100%] mt-[5px] md:mt-[0] gap-[10px]">
+                <p className="">{fetchedGame.instructions}</p>
+                {/* <p className="font-bold">{fetchedGame.category}</p> */}
               </div>
             </section>
           </main>
