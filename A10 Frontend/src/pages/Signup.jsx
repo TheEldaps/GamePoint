@@ -37,8 +37,9 @@ export default function LoginPage() {
               Have an Account? <Link>Log-in</Link>
             </span>
 
-            <div className="flex my-[20px]">
-              <hr className="w-[44%]" /> Or <hr className="w-[44%]" />
+            <div className="flex items-center my-[20px]">
+              <hr className="mr-[5px] w-[44%]" /> or{" "}
+              <hr className="ml-[5px] w-[44%]" />
             </div>
           </div>
 

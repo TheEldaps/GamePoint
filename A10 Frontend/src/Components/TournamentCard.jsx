@@ -11,7 +11,7 @@ export default function TournamentCard({ gameData }) {
   return (
     <section className=" border-[1px] w-[300px] border-[white] md:w-[300px] mt-[60px] mb-[60px]">
       <img className="w-[300px]" src={gameData.thumb} alt="" />
-      {console.log(gameData)}
+
       <div className="bg-[#1c1c1c]  py-[10px] px-[10px] md:py-[15px] md:px-[15px] ">
         <h3 className="flex items-center text-[#fff]  md:text-[24px] h-[60px] ">
           {gameData.title}
