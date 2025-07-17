@@ -54,7 +54,7 @@ export default function GamePage() {
                 frameborder=""
               ></iframe>
 
-              <div className="flex flex-col justify-center max-w-[20%] border w-[100%] mt-[20px] md:mt-[0] gap-[10px]">
+              <div className="flex flex-col justify-center max-w-[20%] border bg-[#fabccf] w-[100%] mt-[20px] md:mt-[0] gap-[10px]">
                 <p className="h-[100%] ">{fetchedGame.instructions}</p>
                 <p className="font-bold">{fetchedGame.category}</p>
               </div>
