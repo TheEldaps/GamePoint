@@ -28,10 +28,10 @@ export default function GamePage() {
   }, [id]);
 
   return (
-    <section className="">
+    <section className="h-[100vh]">
       <Nav />
 
-      <section className="flex justify-center items-center min-h-[95vh] pt-[80px] bg-[#0F0F0F] text-[white]">
+      <section className=" border  items-center h-[100%] pt-[80px] bg-[#0F0F0F] text-[white]">
         {loading ? (
           <BounceLoader
             color="#5C9703"
@@ -40,26 +40,24 @@ export default function GamePage() {
             speedMultiplier={1.5}
           />
         ) : (
-          <main className="h-[100vh]">
-            <section className="flex flex-col justify-around gap-[15px] mt-[20px] border-1 pt-[20px] pb-[5px] px-[50px] ">
-              <h1 className="px-[15px] mx-auto text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-center border-1  text-center">
+          <section className=" py-[10px] ">
+            {/* <h1 className="px-[15px] mx-auto text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] text-center border-1  text-center">
                 {fetchedGame.title}
-              </h1>
-              <iframe
-                className="w-[80vw] h-[80vh] bg-[#fff] border"
-                src={fetchedGame.url}
-                width=""
-                height=""
-                scrolling="none"
-                frameborder=""
-              ></iframe>
+              </h1> */}
+            <iframe
+              className="w-[80vw] h-[80vh] mx-auto bg-[#fff] border"
+              src={fetchedGame.url}
+              width=""
+              height=""
+              scrolling="none"
+              frameborder=""
+            ></iframe>
 
-              <div className="flex flex-col text-center justify-center border bg-[#5C9703] w-[100%] mt-[5px] md:mt-[0] gap-[10px]">
+            {/* <div className="flex flex-col text-center justify-center border bg-[#5C9703] w-[100%] mt-[5px] md:mt-[0] gap-[10px]">
                 <p className="">{fetchedGame.instructions}</p>
-                {/* <p className="font-bold">{fetchedGame.category}</p> */}
-              </div>
-            </section>
-          </main>
+                 <p className="font-bold">{fetchedGame.category}</p> 
+              </div> */}
+          </section>
         )}
       </section>
     </section>
